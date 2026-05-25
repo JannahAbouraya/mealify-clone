@@ -1,0 +1,34 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.parent {
+  display: grid;
+  grid-template-columns: repeat(2, auto);
+  grid-template-rows: minmax(auto, auto);
+}
+.child {
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+}
+
+.child1 {
+  background-color: #b9375e;
+}
+.child2 {
+  background-color: #e05780;
+}
+.child3 {
+  background-color: #ff7aa2;
+}
+.child4 {
+  background-color: #ff9ebb;
+}
+.child5 {
+  background-color: #ffc2d4;
+}
+.child6 {
+  background-color: #ffe0e9;
+}
