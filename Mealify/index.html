@@ -1,12 +1,231 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mealify</title>
-    <link rel="stylesheet" href="./style.css">
-</head>
-<body>
-    
-</body>
+
+    <script
+      src="https://kit.fontawesome.com/42e0bb6159.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="container navbar__container">
+        <h1 class="navbar__logo">Mealify<span class="navbar__dot">.</span></h1>
+
+        <ul class="navbar__menu">
+          <li class="navbar__item">
+            <a class="navbar__link" href="#home">Home</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#chefs">Chefs</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#gallery">Gallery</a>
+          </li>
+          <li class="navbar__item">
+            <a class="navbar__link" href="#contact">Contact</a>
+          </li>
+        </ul>
+
+        <div class="navbar__icon">
+          <i class="fa-solid fa-moon"></i>
+        </div>
+      </div>
+    </nav>
+
+    <main>
+      <section id="home" class="hero-section">
+        <div class="container hero-section__container">
+          <div class="hero-section__content">
+            <h2 class="hero-section__title">
+              Enjoy Your Healthy
+              <br />
+              Delicious Food
+            </h2>
+            <div class="hero-section__description">
+              Sed autem laudantium dolores. Voluptatem itaque ea
+              <br />
+              consequatur eveniet. Eum quas beat ae cumque eum
+              <br />
+              quaerat.
+            </div>
+
+            <div class="hero-section__button-group">
+              <a class="hero-section__hyperlink" href="#contact">
+                Book a Table
+              </a>
+              <a
+                class="hero-section__hyperlink"
+                href="https://www.youtube.com/"
+              >
+                <i class="fa-solid fa-play"></i>
+                Watch a Video</a
+              >
+            </div>
+          </div>
+
+          <div class="hero-section__image">
+            <img
+              src="./images/hero-img.png"
+              alt="A black dish filled with a colorful assortment of fresh vegetables and bread."
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="chefs" class="chefs">
+        <div class="container chefs__container">
+          <div class="container__title">
+            <h3 class="container__main-title">CHEFS</h3>
+            <p class="container__sub-title">
+              Our
+              <span> Professional </span>
+              Chefs
+            </p>
+          </div>
+
+          <div class="chefs__content">
+            <div class="chefs__card">
+              <ul class="chefs__card-links">
+                <li class="chefs__card-link-item">
+                  <a href="https://twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="chefs__card-link-item">
+                  <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+
+                <li class="chefs__card-link-item">
+                  <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+
+                <li class="chefs__card-link-item">
+                  <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+              <div class="chefs__card-image">
+                <img src="./images/chefs-1.jpg" alt="Walter White photo" />
+              </div>
+              <div class="chefs__card-info">
+                <h2 class="chefs__card-name">Walter White</h2>
+                <h3 class="chefs__card-sub-title">Master Chef</h3>
+                <p class="chefs__card-content">
+                  Velit aut quia fugit et et. Dolorum ea voluptate vel tempore
+                  tenetur ipsa quae aut. Ipsum exercitationem iure minima enim
+                  corporis et voluptate.
+                </p>
+              </div>
+            </div>
+            <div class="chefs__card">
+              <ul class="chefs__card-links">
+                <li class="chefs__card-link-item">
+                  <a href="https://twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter" ></i>
+                  </a>
+                </li>
+                <li class="chefs__card-link-item">
+                  <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+
+                <li class="chefs__card-link-item">
+                  <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+
+                <li class="chefs__card-link-item">
+                  <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+              <div class="chefs__card-image">
+                <img src="./images/chefs-2.jpg" alt="Sarah Jhonson photo" />
+              </div>
+              <div class="chefs__card-info">
+                <h2 class="chefs__card-name">Sarah Jhonson</h2>
+                <h3 class="chefs__card-sub-title">Patissier</h3>
+                <p class="chefs__card-content">
+                  Quo esse repellendus quia id. Est eum et accusantium pariatur
+                  fugit nihil minima suscipit corporis. Voluptate sed quas
+                  reiciendis animi neque sapiente.
+                </p>
+              </div>
+            </div>
+            <div class="chefs__card">
+              <ul class="chefs__card-links">
+                <li class="chefs__card-link-item">
+                  <a href="https://twitter.com" target="_blank">
+                    <i class="fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+                <li class="chefs__card-link-item">
+                  <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+
+                <li class="chefs__card-link-item">
+                  <a href="https://instagram.com" target="_blank">
+                    <i class="fa-brands fa-instagram"></i>
+                  </a>
+                </li>
+
+                <li class="chefs__card-link-item">
+                  <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                  </a>
+                </li>
+              </ul>
+
+              <div class="chefs__card-image">
+                <img src="./images/chefs-3.jpg" alt="William Anderson photo" />
+              </div>
+              <div class="chefs__card-info">
+                <h2 class="chefs__card-name">William Anderson</h2>
+                <h3 class="chefs__card-sub-title">Cook</h3>
+                <p class="chefs__card-content">
+                  Vero omnis enim consequatur. Voluptas consectetur unde qui
+                  molestiae deserunt. Voluptates enim aut architecto porro
+                  aspernatur molestiae modi.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" class="gallery">
+        <div class="container gallery__container">
+          <div class="container__title">
+            <h2 class="container__main-title">GALLERY</h2>
+            <p class="container__sub-title">
+              Our
+              <span> Professional </span>
+              Chefs
+            </p>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

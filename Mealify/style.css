@@ -1,0 +1,273 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+:root {
+  /* Brand Colors */
+  --color-primary: #ce1212;
+  --color-text-primary: #212529;
+  --color-text-secondary: #7f7f90;
+  --color-back-ground-primary: #ffffff;
+  --color-back-ground-secondary: #eeeeee;
+
+  /* Typography */
+  --font-primary: "Open Sans", sans-serif;
+  --font-secondary: "Amatic SC", sans-serif;
+  --font-ternary: "Inter", sans-serif;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+a {
+  text-decoration: none;
+}
+
+.navbar {
+  padding: 25px 0;
+
+  width: 100%;
+  position: sticky;
+  top: 0;
+  background-color: var(--color-back-ground-primary);
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  z-index: 100;
+}
+
+.container {
+  width: 82%;
+  max-width: 1200px;
+
+  margin: 0 auto;
+}
+.container__title {
+  margin-top: 70px;
+  text-align: center;
+}
+.container__main-title {
+  color: var(--color-text-secondary);
+  font-family: var(--font-ternary);
+  font-size: 14px;
+  font-weight: 400;
+}
+.container__sub-title span {
+  color: var(--color-primary);
+}
+.container__sub-title {
+  color: var(--color-text-primary);
+
+  font-family: var(--font-secondary);
+  font-size: 50px;
+  font-weight: 400;
+}
+
+.navbar__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar__logo {
+  color: var(--color-text-primary);
+  font-weight: 700;
+  font-size: 30px;
+}
+.navbar__dot {
+  color: var(--color-primary);
+}
+
+.navbar__menu {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar__item {
+  list-style: none;
+  position: relative;
+}
+
+.navbar__item::before {
+  content: "";
+  background-color: var(--color-primary);
+
+  height: 1.8px;
+
+  position: absolute;
+  top: 120%;
+  width: 0;
+  transition: width 0.5s ease;
+}
+
+.navbar__item:hover::before {
+  width: 100%;
+}
+
+.navbar__link {
+  color: var(--color-text-secondary);
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+
+  transition: color 1s ease;
+}
+
+.navbar__item:hover .navbar__link {
+  color: var(--color-text-primary);
+}
+.navbar__icon {
+  font-size: 25px;
+  font-weight: 900;
+  cursor: pointer;
+}
+
+.hero-section {
+  background-color: var(--color-back-ground-secondary);
+}
+
+.hero-section__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding: 110px 0;
+}
+
+.hero-section__title {
+  margin-bottom: 20px;
+
+  color: #37373f;
+
+  font-family: var(--font-secondary);
+  font-size: 65px;
+  font-weight: 700;
+}
+
+.hero-section__description {
+  color: #4f4f5a;
+  font-family: var(--font-primary);
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.hero-section__image {
+  width: 38%;
+}
+
+.hero-section__hyperlink {
+  color: var(--color-text-primary);
+}
+
+.hero-section__button-group {
+  display: flex;
+  justify-content: space-around;
+}
+
+.chefs__container {
+  padding-bottom: 100px;
+}
+.chefs__content {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+
+  margin-top: 45px;
+}
+.chefs__card {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  text-align: center;
+
+  border-radius: 10px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  transition: transform 0.5s ease;
+
+  position: relative;
+}
+
+.chefs__card:hover {
+  transform: scale(1.07);
+}
+.chefs__card-info {
+  display: flex;
+  flex-direction: column;
+
+  gap: 7px;
+  padding: 30px 40px 20px 40px;
+}
+.chefs__card-name {
+  color: var(--color-text-primary);
+  font-family: var(--font-ternary);
+  font-size: 19px;
+  font-weight: 700;
+}
+
+.chefs__card-sub-title {
+  color: var(--color-text-secondary);
+  font-family: var(--font-primary);
+  font-size: 14px;
+  font-weight: 400;
+}
+
+.chefs__card-content {
+  color: var(--color-text-secondary);
+
+  font-family: var(--font-primary);
+  font-size: 15px;
+  font-style: italic;
+  font-weight: 400;
+
+  line-height: 1.5;
+}
+
+.chefs__card:hover .chefs__card-links {
+  right: 3%;
+}
+
+.chefs__card-links {
+  position: absolute;
+
+  top: 5%;
+  right: -20%;
+
+  transition: all 0.5s ease;
+
+  padding: 5px 8px;
+  border-radius: 8px;
+  background-color: rgba(255, 255, 255, 0.422);
+  opacity: 80%;
+}
+
+.chefs__card-link-item {
+  margin: 15px 5px;
+
+  font-size: 18px;
+
+  list-style: none;
+}
+
+.chefs__card-link-item a {
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  display: block;
+}
+.gallery {
+  background-color: var(--color-back-ground-secondary);
+}
+
+.gallery__container {
+  padding-top: 15px;
+}
