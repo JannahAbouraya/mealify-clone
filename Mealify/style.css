@@ -143,6 +143,10 @@ a {
   padding: 110px 0;
 }
 
+.hero-section__content {
+  width: 500px;
+}
+
 .hero-section__title {
   margin-bottom: 20px;
 
@@ -155,13 +159,17 @@ a {
 
 .hero-section__description {
   color: #4f4f5a;
+
   font-family: var(--font-primary);
   font-size: 16px;
   font-weight: 400;
 }
 
 .hero-section__image {
-  width: 38%;
+  max-width: 100%;
+
+  width: 540px;
+  height: 540px;
 }
 
 .hero-section__button-group {
@@ -727,8 +735,8 @@ footer {
 }
 
 .footer__newsletter-subscribe-button:hover {
-background-color: #E61414;
-border-color: #E61414;
+  background-color: #e61414;
+  border-color: #e61414;
 }
 .footer__newsletter-quick-links {
   margin-top: 15px;
