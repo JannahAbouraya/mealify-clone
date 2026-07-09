@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Mealify</title>
+    <link rel="icon" href="./images/favicon.png" />
 
     <script
       src="https://kit.fontawesome.com/42e0bb6159.js"
@@ -23,8 +24,11 @@
       <div class="container navbar__container">
         <h1 class="navbar__logo">Mealify<span class="navbar__dot">.</span></h1>
 
-        <ul class="navbar__menu">
-          <li class="navbar__item">
+        <ul class="navbar__menu" id="nav-menu">
+          <li class="navbar__close-btn" id="close-btn">
+            <i class="fa-solid fa-xmark"></i>
+          </li>
+          <li class="navbar__item active">
             <a class="navbar__link" href="#home">Home</a>
           </li>
           <li class="navbar__item">
@@ -38,8 +42,14 @@
           </li>
         </ul>
 
-        <div class="navbar__icon">
-          <i class="fa-solid fa-moon"></i>
+        <div class="navbar__icons">
+          <div class="navbar__icon" id="theme-toggle">
+            <i class="fa-solid fa-moon navbar__icon-moon"></i>
+            <i class="fa-regular fa-sun navbar__icon-sun"></i>
+          </div>
+          <div class="navbar__hmbrg-icon navbar__icon" id="hmbrg-icon">
+            <i class="fa-solid fa-bars"></i>
+          </div>
         </div>
       </div>
     </nav>
@@ -120,6 +130,15 @@
               </ul>
               <div class="chefs__card-image">
                 <img src="./images/chefs-1.jpg" alt="Walter White photo" />
+                <svg
+                  class="chefs__wave"
+                  viewBox="0 0 1440 320"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0,224L80,213.3C160,203,320,181,480,186.7C640,192,800,224,960,229.3C1120,235,1280,213,1360,202.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+                  ></path>
+                </svg>
               </div>
               <div class="chefs__card-info">
                 <h2 class="chefs__card-name">Walter White</h2>
@@ -158,6 +177,15 @@
               </ul>
               <div class="chefs__card-image">
                 <img src="./images/chefs-2.jpg" alt="Sarah Jhonson photo" />
+                <svg
+                  class="chefs__wave"
+                  viewBox="0 0 1440 320"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0,224L80,213.3C160,203,320,181,480,186.7C640,192,800,224,960,229.3C1120,235,1280,213,1360,202.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+                  ></path>
+                </svg>
               </div>
               <div class="chefs__card-info">
                 <h2 class="chefs__card-name">Sarah Jhonson</h2>
@@ -197,6 +225,15 @@
 
               <div class="chefs__card-image">
                 <img src="./images/chefs-3.jpg" alt="William Anderson photo" />
+                <svg
+                  class="chefs__wave"
+                  viewBox="0 0 1440 320"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M0,224L80,213.3C160,203,320,181,480,186.7C640,192,800,224,960,229.3C1120,235,1280,213,1360,202.7L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+                  ></path>
+                </svg>
               </div>
               <div class="chefs__card-info">
                 <h2 class="chefs__card-name">William Anderson</h2>
@@ -321,7 +358,7 @@
         </div>
       </section>
 
-      <section id="contact">
+      <section id="contact" class="contact">
         <div class="container contact__container">
           <div class="container__title">
             <h3 class="container__main-title">CONTACT</h3>
@@ -420,7 +457,7 @@
             <div class="footer__about-main-title">
               <img
                 class="footer__about-icon"
-                src="./images/images.jpg"
+                src="./images/favicon.png"
                 alt="Mealify Logo"
               />
               <h2 class="footer__about-title">Mealify<span>.</span></h2>
@@ -551,5 +588,7 @@
         </div>
       </footer>
     </main>
+
+    <script src="./script.js"></script>
   </body>
 </html>
