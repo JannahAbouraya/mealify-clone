@@ -3,23 +3,25 @@ const hamburgerBtn = document.getElementById("hmbrg-icon");
 const closeBtn = document.getElementById("close-btn");
 const navMenu = document.getElementById("nav-menu");
 
-navItems.forEach((item) => {
-  item.addEventListener("click", function () {
-    navItems.forEach((nav) => nav.classList.remove("active"));
-    this.classList.add("active");
-  });
-});
-
 if (hamburgerBtn) {
   hamburgerBtn.addEventListener("click", () => {
     navMenu.classList.add("show-menu");
+    navItems.forEach((nav) => nav.classList.remove("active"));
   });
 }
 
 if (navItems) {
   navItems.forEach((item) => {
     item.addEventListener("click", () => {
-      navMenu.classList.remove("show-menu");
+      if (navMenu) {
+        navMenu.classList.remove("show-menu");
+      }
+      if (window.innerWidth > 992) {
+        navItems.forEach((nav) => nav.classList.remove("active"));
+        this.classList.add("active");
+      } else {
+        navItems.forEach((nav) => nav.className.remove("active"));
+      }
     });
   });
 }
